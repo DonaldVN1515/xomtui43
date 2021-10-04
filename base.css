@@ -1,0 +1,149 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #fffb00;
+    --primary-color-background: rgba(255, 251, 0, 0.2);
+    --primary-color-rgba: rgba(251, 85, 51, 0.05);
+    --box-shadow-color: rgba(0, 0, 0, 0.8);
+    --red-color: rgb(255, 0, 0);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* button */
+.btn {
+    min-width: 12rem;
+    height: 3.2rem;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    font-weight: 600;
+    box-shadow: 1rem 1rem 0.5rem -1rem var(--box-shadow-color);
+}
+.btn:hover {
+    filter: brightness(90%);
+}
+
+.white {
+    color: var(--primary-color);
+    background-color: var(--text-color);
+}
+.yellow {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+}
+.error {
+    color: var(--box-shadow-color);
+    background-color: var(--text-color);
+}
+.error:hover {
+    filter: brightness(100%) !important;
+    cursor: default  !important;
+}
+/* model code */
+.model {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+}
+.model--overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.model__form {
+    position: relative;
+    z-index: 1; 
+    margin: auto;
+    border-radius: 0.5rem;
+    background-color: var(--white-color);
+    width: 50rem;
+}
+.model.open {
+    display: flex;
+}
+/* animation code */
+@keyframes fade-in {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes scale-in {
+    from {
+        opacity: 0.5;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Animation code */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade-in-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes scroll-down {
+    from {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes scale-up {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-0.5rem);
+    }
+}
+@keyframes scale-in-up {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+        filter: brightness(80%);
+    }
+}

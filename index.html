@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xomtui43 | Đi chợ hộ và hơn thế nữa</title>
+    <link rel="icon" href="./assets/images/xomtui.ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./mainPage/main.css">
+    <link rel="stylesheet" href="./mainPage/responsive.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body> 
+    <div id="main">
+        <header id="header">
+            <div class="header__heading">
+                <div class="header__navbar grid wide row hidden-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link ">Trang chủ</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-has-qr">
+                            <a href="#shop" class="header__navbar-link ">Shop</a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-has-notify">
+                            <a href="#" class="header__navbar-link">
+                                <p class="header_navbar-notify-quantity">5</p>
+                                <i class="ti-bell header__navbar-item-icon"></i>Thông báo
+                            </a>
+                            <!-- Notification Code-->
+                            <div class="header__navbar-notify">
+                                <div class="header__navbar-notify-title">
+                                    <p class="header__navbar-notify-inf">Thông Báo Mới Nhận:</p>
+                                </div>
+                            
+                                <div class="header__navbar-notify-content">
+                                    <a href="#" class="header__navbar-notify-link">
+                                        <img src="https://img.abaha.vn/photos/resized/200x120/83-1586327583-myphamohui-lgvina.png" alt="Ảnh" class="header__navbar-notify-img">
+                                        <div class="header__navbar-notify-inf">
+                                            <p class="header__navbar-notify-about">Điều khoản Shop</p>
+                                            <p class="header__navbar-notify-sub">Điều khoản sử dụng</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="header__navbar-notify-more">
+                                    <a href="#" class="header__navbar-notify-link">
+                                        <p>Xem tất cả</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">
+                                <i class="ti-help-alt header__navbar-item-icon"></i>Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-separate"> 
+                            <a href="#" class="header__navbar-link header__navbar-has-register js-register">Đăng kí</a>
+                        </li>
+                        <li class="header__navbar-item"> 
+                            <a href="#" class="header__navbar-link header__navbar-has-l js-login">Đăng nhập</a>
+                        </li>
+                        <!-- Account -->
+                        <!-- <li class="header__navbar-accounts">
+                            <div class="header__navbar-user">
+                                <img src="./assets/img/Accounts/account.png" alt="#" class="header__navbar-accounts-img">
+                                <p class="header__navbar-accounts-name">DonaldVN</p>
+                            </div>
+                        account code
+                            <div class="header__my-account">
+                                <a href="#" class="header__my-account-account">Tài khoản của tôi</a>
+                                <a href="#" class="header__my-account-order">Đơn mua</a>
+                                <span class="header__my-account-logout">Đăng xuất</span>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="header__search grid wide row">
+                    <div class="header__search-logo">
+                        <a class="header__logo-link" href="./mainPage/index.html">
+                        <img src="./assets/images/xomtui.ico" class="header__search-link" alt="logo"></img>
+                        </a>
+                    </div>
+                    <div class="header__search-bar">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm">
+                        <!-- Search-history Code -->
+                        <div class="header__navbar-search-icon">
+                            <i class="ti-search"></i>
+                        </div>
+                        <div class="header__search-history">
+                            <p>Lịch sử tìm kiếm</p>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="#" class="header__search-history-link">Rau</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="#" class="header__search-history-link">Thịt</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search-cart">
+                        <p class="header_search-cart-quantity">3</p>
+                        <a href="#" class="header__search-link">
+                            <i class="ti-shopping-cart"></i>
+                        </a>
+                        <!-- Cart Code -->
+                        <div class="header__cart">
+                            <!-- No-Cart Code -->
+                            <!-- <div class="header__cart--no">
+                               <img src="./assets/img/Cart/no-cart.png" alt="Chưa có sản phẩm" class="header__cart-img">
+                                <p>Chưa có sản phẩm</p>
+                            </div> -->
+                            <!-- Has-Cart Code -->
+                            <div class="header__cart--yes">
+                                <div class="header__cart-title">
+                                    <h3>Sản phẩm đã thêm:</h3>
+                                </div>
+                                <div class="header__cart-list">
+                                    <div class="header__cart-item">
+                                        <div class="header__cart-item-img">
+                                            <img src="./assets/images/rau1.jpg" alt="#">
+                                        </div>
+                                        <div class="header__cart-item-inf">
+                                            <div class="header__cart-items">
+                                                <h4 class="header__cart-item-title">Rau mồng tơi</h4>
+                                                <div class="header__cart-item-about">
+                                                    <p class="header__cart-item-price">5.000VND</p>
+                                                    <p class="header__cart-item-multiply">x</p>
+                                                    <p class="header__cart-item-quantity">1</p>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-subitems">
+                                                <p class="header__cart-item-category">Phân loại: Tốt</p>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-item">
+                                        <div class="header__cart-item-img">
+                                            <img src="./assets/images/rau2.jpg" alt="#">
+                                        </div>
+                                        <div class="header__cart-item-inf">
+                                            <div class="header__cart-items">
+                                                <h4 class="header__cart-item-title">Rau mồng tơi</h4>
+                                                <div class="header__cart-item-about">
+                                                    <p class="header__cart-item-price">5.000VND</p>
+                                                    <p class="header__cart-item-multiply">x</p>
+                                                    <p class="header__cart-item-quantity">2</p>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-subitems">
+                                                <p class="header__cart-item-category">Phân loại: Tốt</p>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                 </div>
+                                <div class="header__cart-btn">
+                                    <a href="#">
+                                        <button> <h4>Xem giỏ hàng</h4></button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+         <container id="content">
+            <!-- /* slider code */ -->
+            <div class="content__slider">
+                <div class="slider__container">
+                    <div class="slider__list">
+                        <div class="slider__list-item">
+                            <img src="./assets/images/main2.jpg" class="slider__list-img" alt="Ảnh">
+                        </div>
+                        <div class="slider__list-infor">
+                            <h3 class="slider__infor-title">da nang</h3>
+                            <p class="slider__infor-about">The days without me and you...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__down">
+                    <a class="content__down-link" href="#shop">
+                        <i class="ti-angle-down"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- /* products code */ -->
+            <div id="shop" class="content__products">
+            <div class="content__products-container grid wide">
+                <!-- /* content__title code */ -->
+                <div class="content__title-background--white">
+                    <div class="content__title">
+                        <h2 class="content__title-name">shop</h2>
+                    </div>
+                </div>
+                <div class="content__filter hidden-on-mobile-tablet">
+                    <div class="content__filter-list">
+                        <div class="content__filter-item">
+                            <a href="#" class="content__filter-link">Bán chạy nhất</a>
+                        </div>
+                        <div class="content__filter-item">
+                            <a href="#" class="content__filter-link">Ưa thích nhất</a>
+                        </div>
+                        <div class="content__filter-item">
+                            <a href="#" class="content__filter-link">Phổ biến nhất</a>
+                        </div>
+                        <div class="content__filter-item">
+                            <a href="#" class="content__filter-link"p>Rau sạch</a>
+                        </div>
+                        <div class="content__filter-item">
+                            <a href="#" class="content__filter-link"p>Thịt</a>
+                        </div>
+                        <div class="content__filter-item">
+                            <a href="#" class="content__filter-link"p>Hải sản</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row padding">
+                    <!-- /* categories */ -->
+                    <div class="col l-3 m-0 c-0">
+                        <div class="products__categories">
+                            <div class="products__categories-title">
+                                <i class="ti-list"></i>
+                                <h3>Danh mục</h3>
+                            </div>
+                            <div class="products__categories-list">
+                                <div class="products__categories-list-item">
+                                    <div class="products__categories-list-title">
+                                        <i class="ti-angle-right"></i>
+                                        <h4 class="products__categories-name">Sản phẩm hàng đầu:</h4>
+                                    </div>
+                                    <ul class="products__categories-items">
+                                        <li class="products__categories-about">
+                                            <a href="#" class="products__categories-link">- Bán chạy nhất</a>
+                                        </li>
+                                        <li class="products__categories-about">
+                                            <a href="#" class="products__categories-link">- Ưa thích nhất</a>
+                                        </li>
+                                        <li class="products__categories-about">
+                                            <a href="#" class="products__categories-link">- Phổ biến nhất</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="products__categories-list">
+                                <div class="products__categories-list-item">
+                                    <div class="products__categories-list-title">
+                                        <i class="ti-angle-right"></i>
+                                        <h4 class="products__categories-name">Lựa chọn:</h4>
+                                    </div>
+                                    <ul class="products__categories-items">
+                                        <li class="products__categories-about">
+                                            <a href="#" class="products__categories-link">- Thịt</a>
+                                        </li>
+                                        <li class="products__categories-about">
+                                            <a href="#" class="products__categories-link">- Rau sạch</a>
+                                        </li>
+                                        <li class="products__categories-about">
+                                            <a href="#" class="products__categories-link">- Hải sản tươi sống</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /* items code */ -->
+                    <div class="col l-9 m-12 c-12">
+                        <!-- /* filter code */ -->
+                        <div>
+                            <div class="content__filter-container">
+                                <div class="content__products-filter">
+                                    <div class="products__filter-list">
+                                        <div class="products__filter-item">
+                                            <p class="products__filter-title">Bộ lọc :</p>
+                                        </div>
+                                        <div class="products__filter-item">
+                                            <a href="#" class="products__filter-item-link">
+                                            <button class="products__filter-popular btn white">Phổ biến</button>
+                                            </a>
+                                        </div>
+                                        <div class="products__filter-item">
+                                            <a href="#" class="products__filter-item-link">
+                                            <button class="products__filter-newest btn orange">Mới nhất</button>
+                                            </a>
+                                        </div>
+                                        <div class="products__filter-item">
+                                            <a href="#" class="products__filter-item-link">
+                                                <button class="products__filter-seller btn white">Bán chạy nhất</button>
+                                            </a>
+                                        </div>
+                                        <div class="products__filter-item content__products-price--has">
+                                            <button class="products__filter-price btn white">
+                                                <p>Giá</p> 
+                                                <i class="ti-angle-down"></i>
+                                                <!-- Price code -->
+                                            </button>
+                                            <div class="content__products-price">
+                                                <a href="#" class="products__filter-price-link">
+                                                    <p>0 - 500.000VND</p>
+                                                </a>
+                                                <a href="#" class="products__filter-price-link">
+                                                    <p>1.000.000VND - 5.000.00VND</p>
+                                                </a>
+                                                <a href="#" class="products__filter-price-link">
+                                                    <p>500.000VND - 1.000.000VND</p>
+
+                                                </a>
+                                                <a href="#" class="products__filter-price-link">
+                                                    <p>Over 5.000.00VND</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products__filter-pagination">
+                                        <div class="products__pagination-number">
+                                            <p class="products__pagination-now">1</p>
+                                            <p>/</p>
+                                            <p class="products__pagination-total">5</p>
+                                        </div>
+                                        <div class="products__pagination-page">
+                                            <button class="products__pagination-left error">
+                                                <i class="ti-angle-left"></i>
+                                            </button>
+                                            <button class="products__pagination-right yellow">
+                                                <i class="ti-angle-right"></i>  
+                                            </button>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="content__products-list">
+                            <div class="row">
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products__list">
+                                        <div  class="products__items">
+                                            <div class="products__items-picture">
+                                                <a href="./productPage/product.html">
+                                                    <img src="./assets/images/rau4.jpg" class="products__items-img" alt="rau">
+                                                </a>
+                                            </div>
+                                            <div class="products__items-infor">
+                                                <div class="products__items-title">
+                                                    <h3 class="products__items-name">Rau mồng tơi</h3>
+                                                    <p class="products__items-sub">Nguồn gốc: Hàng hóa Việt Nam</p>
+                                                </div>
+                                                <div class="products__items-prices">
+                                                    <p class="products__items-prices--old">5.000VND</p>
+                                                    <p class="products__items-prices--new">10.000VND</p>
+                                                </div>
+                                                <div class="products__items-active">
+                                                    <div class="products__items-active-love products__items-active-love--loved">
+                                                        <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                        <i class="products__items-active-love--done fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="products__items-active-stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-others">
+                                                    <div class="products__items-others-sell">
+                                                        <p class="products__items-others-sell--sold">Đã bán: 1000</p>
+                                                        <p class="products__items-others-sell--notyet">Còn lại: 1</p>
+                                                    </div>
+                                                    <div class="products__items-others-city">Da Nang</div>
+                                                </div>
+                                            </div>
+                                            <div class="products__items-favorite">
+                                                <p>
+                                                    Favourite
+                                                    <i class="ti-check"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products__list">
+                                        <div  class="products__items">
+                                            <div class="products__items-picture">
+                                                <a href="./productPage/product.html">
+                                                    <img src="./assets/images/rau4.jpg" class="products__items-img" alt="rau">
+                                                </a>
+                                            </div>
+                                            <div class="products__items-infor">
+                                                <div class="products__items-title">
+                                                    <h3 class="products__items-name">Rau mồng tơi</h3>
+                                                    <p class="products__items-sub">Nguồn gốc: Hàng hóa Việt Nam</p>
+                                                </div>
+                                                <div class="products__items-prices">
+                                                    <p class="products__items-prices--old">5.000VND</p>
+                                                    <p class="products__items-prices--new">10.000VND</p>
+                                                </div>
+                                                <div class="products__items-active">
+                                                    <div class="products__items-active-love products__items-active-love--loved">
+                                                        <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                        <i class="products__items-active-love--done fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="products__items-active-stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-others">
+                                                    <div class="products__items-others-sell">
+                                                        <p class="products__items-others-sell--sold">Đã bán: 1000</p>
+                                                        <p class="products__items-others-sell--notyet">Còn lại: 1</p>
+                                                    </div>
+                                                    <div class="products__items-others-city">Da Nang</div>
+                                                </div>
+                                            </div>
+                                            <div class="products__items-favorite">
+                                                <p>
+                                                    Favourite
+                                                    <i class="ti-check"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-0 c-0">
+                                    <div class="products__list">
+                                        <div  class="products__items">
+                                            <div class="products__items-picture">
+                                                <a href="./productPage/product.html">
+                                                    <img src="./assets/images/rau4.jpg" class="products__items-img" alt="rau">
+                                                </a>
+                                            </div>
+                                            <div class="products__items-infor">
+                                                <div class="products__items-title">
+                                                    <h3 class="products__items-name">Rau mồng tơi</h3>
+                                                    <p class="products__items-sub">Nguồn gốc: Hàng hóa Việt Nam</p>
+                                                </div>
+                                                <div class="products__items-prices">
+                                                    <p class="products__items-prices--old">5.000VND</p>
+                                                    <p class="products__items-prices--new">10.000VND</p>
+                                                </div>
+                                                <div class="products__items-active">
+                                                    <div class="products__items-active-love products__items-active-love--loved">
+                                                        <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                        <i class="products__items-active-love--done fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="products__items-active-stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-others">
+                                                    <div class="products__items-others-sell">
+                                                        <p class="products__items-others-sell--sold">Đã bán: 1000</p>
+                                                        <p class="products__items-others-sell--notyet">Còn lại: 1</p>
+                                                    </div>
+                                                    <div class="products__items-others-city">Da Nang</div>
+                                                </div>
+                                            </div>
+                                            <div class="products__items-favorite">
+                                                <p>
+                                                    Favourite
+                                                    <i class="ti-check"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row margin-top">
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products__list">
+                                        <div  class="products__items">
+                                            <div class="products__items-picture">
+                                                <a href="./productPage/product.html">
+                                                    <img src="./assets/images/rau4.jpg" class="products__items-img" alt="rau">
+                                                </a>
+                                            </div>
+                                            <div class="products__items-infor">
+                                                <div class="products__items-title">
+                                                    <h3 class="products__items-name">Rau mồng tơi</h3>
+                                                    <p class="products__items-sub">Nguồn gốc: Hàng hóa Việt Nam</p>
+                                                </div>
+                                                <div class="products__items-prices">
+                                                    <p class="products__items-prices--old">5.000VND</p>
+                                                    <p class="products__items-prices--new">10.000VND</p>
+                                                </div>
+                                                <div class="products__items-active">
+                                                    <div class="products__items-active-love products__items-active-love--loved">
+                                                        <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                        <i class="products__items-active-love--done fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="products__items-active-stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-others">
+                                                    <div class="products__items-others-sell">
+                                                        <p class="products__items-others-sell--sold">Đã bán: 1000</p>
+                                                        <p class="products__items-others-sell--notyet">Còn lại: 1</p>
+                                                    </div>
+                                                    <div class="products__items-others-city">Da Nang</div>
+                                                </div>
+                                            </div>
+                                            <div class="products__items-favorite">
+                                                <p>
+                                                    Favourite
+                                                    <i class="ti-check"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="products__list">
+                                        <div  class="products__items">
+                                            <div class="products__items-picture">
+                                                <a href="./productPage/product.html">
+                                                    <img src="./assets/images/rau4.jpg" class="products__items-img" alt="rau">
+                                                </a>
+                                            </div>
+                                            <div class="products__items-infor">
+                                                <div class="products__items-title">
+                                                    <h3 class="products__items-name">Rau mồng tơi</h3>
+                                                    <p class="products__items-sub">Nguồn gốc: Hàng hóa Việt Nam</p>
+                                                </div>
+                                                <div class="products__items-prices">
+                                                    <p class="products__items-prices--old">5.000VND</p>
+                                                    <p class="products__items-prices--new">10.000VND</p>
+                                                </div>
+                                                <div class="products__items-active">
+                                                    <div class="products__items-active-love products__items-active-love--loved">
+                                                        <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                        <i class="products__items-active-love--done fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="products__items-active-stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-others">
+                                                    <div class="products__items-others-sell">
+                                                        <p class="products__items-others-sell--sold">Đã bán: 1000</p>
+                                                        <p class="products__items-others-sell--notyet">Còn lại: 1</p>
+                                                    </div>
+                                                    <div class="products__items-others-city">Da Nang</div>
+                                                </div>
+                                            </div>
+                                            <div class="products__items-favorite">
+                                                <p>
+                                                    Favourite
+                                                    <i class="ti-check"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-0 c-0">
+                                    <div class="products__list">
+                                        <div  class="products__items">
+                                            <div class="products__items-picture">
+                                                <a href="./productPage/product.html">
+                                                    <img src="./assets/images/rau4.jpg" class="products__items-img" alt="rau">
+                                                </a>
+                                            </div>
+                                            <div class="products__items-infor">
+                                                <div class="products__items-title">
+                                                    <h3 class="products__items-name">Rau mồng tơi</h3>
+                                                    <p class="products__items-sub">Nguồn gốc: Hàng hóa Việt Nam</p>
+                                                </div>
+                                                <div class="products__items-prices">
+                                                    <p class="products__items-prices--old">5.000VND</p>
+                                                    <p class="products__items-prices--new">10.000VND</p>
+                                                </div>
+                                                <div class="products__items-active">
+                                                    <div class="products__items-active-love products__items-active-love--loved">
+                                                        <i class="products__items-active-love--notyet far fa-heart"></i>
+                                                        <i class="products__items-active-love--done fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="products__items-active-stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="products__items-others">
+                                                    <div class="products__items-others-sell">
+                                                        <p class="products__items-others-sell--sold">Đã bán: 1000</p>
+                                                        <p class="products__items-others-sell--notyet">Còn lại: 1</p>
+                                                    </div>
+                                                    <div class="products__items-others-city">Da Nang</div>
+                                                </div>
+                                            </div>
+                                            <div class="products__items-favorite">
+                                                <p>
+                                                    Favourite
+                                                    <i class="ti-check"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+         </container>
+        <footer id="footer">
+            <!-- /* footer more */ -->
+            <div class="footer__more">
+                <div class="row">
+                    <div class="col l-3 m-3 c-6">
+                        <h3 class="footer__more-title">Dịch vụ khách hàng</h3>
+                        <ul class="footer__more-list">
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Shop mail</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Hướng dẫn Shopping</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <h3 class="footer__more-title">Thông tin về chúng tôi</h3>
+                        <ul class="footer__more-list">
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Giới thiệu về Xomtui43</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Chính sách bảo mật</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <h3 class="footer__more-title">Danh mục</h3>
+                        <ul class="footer__more-list">
+                            <li class="footer__more-item">
+                                <a href="#shop" class="footer__more-link">Shop</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Thông báo</a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="#" class="footer__more-link">Hỗ trợ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <h3 class="footer__more-title">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer__more-list">
+                            <li class="footer__more-item">
+                                <a href="" class="footer__more-link">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="" class="footer__more-link">
+                                    <i class="fab fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                            <li class="footer__more-item">
+                                <a href="" class="footer__more-link">
+                                    <i class="fab fa-chrome"></i>
+                                    Website
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /* footer__policies */ -->
+            <div class="footer__policies">
+                <a href="#" class="footer__policies-link footer__policies-link-separate">
+                    <h3 class="footer__policies-title">Chính sách bảo mật</h3>
+                </a>
+                <a href="#" class="footer__policies-link footer__policies-link-separate">
+                    <h3 class="footer__policies-title">Quy chế hoạt động</h3>
+                </a>
+                <a href="#" class="footer__policies-link footer__policies-link-separate">
+                    <h3 class="footer__policies-title">Chính sách vận chuyển</h3>
+                </a>
+                <a href="#" class="footer__policies-link">
+                    <h3 class="footer__policies-title">Chính sách trả hàng và hoàn tiền</h3>
+                </a>
+            </div>
+            <!-- /* footer__infor code */ -->
+            <div class="footer__infor">
+                <div class="footer__infor_logo">
+                    <img src="./assets/images/xomtui.png" alt="Logo" class="footer__infor_logo-img">
+                </div>
+                <div class="footer__infor-copyrights">
+                    <p class="footer__infor-copyrights-about">@2021 - Copyright by Xomtui43</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Model Code -->
+        <!-- LOGIN -->
+        <div class="model model__login js-model-login">
+            <div class="model--overlay js-model-overlay-login"></div>
+            <div class="model__form">        
+                <div class="model__form--login">
+                    <div class="model__form-container js-model-container">
+                        <div class="model__form-title">
+                            <h3 class="model__form-register">Đăng nhập</h3>
+                        </div>
+                        <div class="model__form-user">
+                            <img src="./assets/images/person2.png" alt="Người dùng" class="model__form-img">
+                        </div>
+                        <div class="model__form-input">
+                            <div class="model__form-group">
+                                <input type="tel" class="model__form-name" required placeholder="Số điện thoại">
+                            </div>
+                            <div class="model__form-group">
+                                <input type="password" class="model__form-name" required placeholder="Mật Khẩu">
+                            </div>  
+                        </div>
+                        <div class="model__form-help">
+                            <a href="#" class="model__form-forgotpw separate">Quên mật khẩu</a>
+                            <a href="#" class="model__form-needhelp">Cần trợ giúp?</a>
+                        </div>
+                        <div class="model__form-btn">
+                            <button class="btn model__form-btn-comeback js-model-cancel-login">Trở lại</button>
+                            <button class="btn model__form-btn-register">Đăng nhập</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- REGISTER -->
+        <div class="model model__register js-model-register">
+            <div class="model--overlay js-model-overlay-register"></div>
+            <div class="model__form">
+                 <div class="model__form--register">
+                    <div class="model__form-container js-model-container">
+                        <div class="model__form-title">
+                            <h3 class="model__form-register">Đăng ký</h3>
+                        </div>
+                        <div class="model__form-input">
+                           <div class="model__form-group">
+                            <div class="model__form-name-title">Họ và tên</div>
+                            <div>
+                                <input type="text" class="model__form-name" placeholder="-- Nguyễn Văn A --">  
+                            </div>
+                           </div>
+                            <div class="model__form-group">
+                                <div class="model__form-birthday-title">Tên đăng nhập</div>
+                                <input type="tel" class="model__form-name" placeholder="Số điện thoại">
+                            </div>
+                            <div class="model__form-group">
+                                <div class="model__form-birthday-title">Mật khẩu</div>
+                                <input type="password" class="model__form-name" placeholder="Mật Khẩu">
+                            </div>
+                            <div class="model__form-group">
+                                <div class="model__form-birthday-title">Nhập lại mật khẩu</div>
+                                <input type="password" class="model__form-name" placeholder="Nhập lại mật khẩu">
+                            </div>   
+                            <div class="model__form-group model__form-gender">
+                                <div class="model__form-group-gender">
+                                    <p>Giới tính</p>
+                                    <div>
+                                        <input class="model__form-male" type="radio" name="sex" value="male" checked>
+                                        <p>Nam</p> 
+                                        <br>
+                                        <input class="model__form-female" type="radio" name="sex" value="female">
+                                        <p>Nữ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="model__form-group model__form-birthday">
+                                <div class="model__form-birthday-title">Ngày sinh</div>
+                                <div class="model__form-birthday-infor">
+                                    <select class="model__form-year model__form-name" name="year" id="year" size="1"></select>
+                                     <select class="model__form-month model__form-name" name="month" id="month" size="1"></select>
+                                    <select class="model__form-day model__form-name" name="day" id="day" size="1">
+                                        <option value=" " selected="selected">-- Ngày --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="model__form-group">
+                                <div class="model__form-birthday-title">Địa chỉ</div>
+                                <div class="model__form-addr">
+                                    <div>
+                                        <select class="model__form-province model__form-name" name="calc_shipping_provinces" required="">
+                                            <option value="">Tỉnh / Thành phố</option>
+                                        </select>
+                                        <select class="model__form-district model__form-name" name="calc_shipping_district" required="">
+                                            <option value="">Quận / Huyện</option>
+                                        </select>
+                                    </div>
+                                    <input class="billing_address_1" name="" type="hidden" value="">
+                                    <input class="billing_address_2" name="" type="hidden" value="">
+                                    <div class="model__form-wardVillage">
+                                        <input type="text" class="model__form-name model__form-addr-ward" placeholder="Nhập Phường / xã">
+                                        <input type="text" class="model__form-name model__form-addr-village" placeholder="Nhập Thôn / xóm">
+                                        <input type="text" class="model__form-name model__form-addr-addr" placeholder="Địa chỉ nhà">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="model__form-policy">
+                            <p class="model__form-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với Xomtui43 về
+                                <a href="#" class="model__form-termsofService">Điều khoản dịch vụ</a> &
+                                <a href="#" class="model__form-privacy">Chính sách bảo mật</a>.
+                            </p>
+                        </div>
+                        <div class="model__form-btn">
+                            <button class="btn model__form-btn-comeback js-model-cancel-register">Trở lại</button>
+                            <button class="btn model__form-btn-register">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.js"></script> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/vietblogdao/js/districts.min.js'></script>
+    <script src="./mainPage/main.js"></script>
+</body>
+</html>
