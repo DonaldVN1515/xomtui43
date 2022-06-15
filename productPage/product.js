@@ -200,9 +200,11 @@ const minusProduct = document.querySelector('.js-product-minus');
 const quantityProduct = document.querySelector('.js-product-number');
 
 const minusProductHandle = function() {
-  quantityProduct.innerText =- 1
+  // quantityProduct =- 1
+  // quantityProduct.innerText 
 }
 const addProductHandle = function() {
-  quantityProduct.innerText =+ 1
+  // quantityProduct =+ 1
+  // quantityProduct.innerText = quantityProduct
 
 }
