@@ -129,6 +129,8 @@
     })
 
 // EVENTS
+
+
 const buyBtn = document.querySelector('.js-product-buy')
 const cancelPay = document.querySelector('.js-product-cancel')
 const getModelPay = document.querySelector('.js-model-pay')
@@ -190,3 +192,17 @@ CancelModelProduct.addEventListener('click', cancelModelPay)
 
 // minusBtn.addEventListener('click', decreaseNumber)
 // plusBtn.addEventListener('click', increaseNumber)
+
+
+
+const addProduct = document.querySelector('.js-product-plus');
+const minusProduct = document.querySelector('.js-product-minus');
+const quantityProduct = document.querySelector('.js-product-number');
+
+const minusProductHandle = function() {
+  quantityProduct.innerText =- 1
+}
+const addProductHandle = function() {
+  quantityProduct.innerText =+ 1
+
+}

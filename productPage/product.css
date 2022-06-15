@@ -69,6 +69,7 @@ body {
 }
 .product__mainImg {
     width: 100%;
+    object-fit: contain;
     max-height: 25rem;
 }
 .product__image {
@@ -360,7 +361,7 @@ body {
     margin: 0rem 1rem 2rem 0rem;
     box-shadow: 1rem 1rem 0.8rem -1.1rem var(--box-shadow-color);
     width: 20rem;
-    height: 27rem;
+    height: 33rem;
     display: block;
 }
 #product .product__items-picture {
